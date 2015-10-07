@@ -6,19 +6,19 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using FireBee.Extensions;
+using FireBee.Forms;
+using FireBee.Forms.Management;
 
 namespace FireBee
 {
-    public partial class inloggen : Form
+    public partial class FormMain : Form
     {
-        public inloggen()
+        public FormMain()
         {
             InitializeComponent();
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-
+            this.SetView(new FormManagement());
+            
         }
     }
 }
