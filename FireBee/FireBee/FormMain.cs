@@ -6,14 +6,19 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using FireBee.Extensions;
+using FireBee.Forms;
+using FireBee.Forms.Management;
 
 namespace FireBee
 {
-    public partial class Form1 : Form
+    public partial class FormMain : Form
     {
-        public Form1()
+        public FormMain()
         {
             InitializeComponent();
+            this.SetView(new FormManagement());
+            
         }
     }
 }

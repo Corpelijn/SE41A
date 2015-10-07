@@ -15,7 +15,7 @@ namespace FireBee
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Beheer());
+            Application.Run(new FormMain());
         }
     }
 }
