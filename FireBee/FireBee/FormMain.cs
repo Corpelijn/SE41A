@@ -16,9 +16,7 @@ namespace FireBee
     {
         public FormMain()
         {
-            InitializeComponent();
-            this.SetView(new FormManagement());
-            
+            InitializeComponent();            
         }
     }
 }

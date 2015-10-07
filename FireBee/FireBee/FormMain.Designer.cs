@@ -113,7 +113,6 @@
             this.btnBrand.TabIndex = 3;
             this.btnBrand.Text = "Brand";
             this.btnBrand.UseVisualStyleBackColor = true;
-            this.btnBrand.Click += new System.EventHandler(this.button2_Click);
             // 
             // inloggen
             // 
