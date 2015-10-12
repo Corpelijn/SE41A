@@ -40,6 +40,10 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.PanelGebouw = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.route4 = new System.Windows.Forms.PictureBox();
+            this.route3 = new System.Windows.Forms.PictureBox();
+            this.route2 = new System.Windows.Forms.PictureBox();
+            this.route1 = new System.Windows.Forms.PictureBox();
             this.button7 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
@@ -51,21 +55,17 @@
             this.listView1 = new System.Windows.Forms.ListView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.route1 = new System.Windows.Forms.PictureBox();
-            this.route2 = new System.Windows.Forms.PictureBox();
-            this.route3 = new System.Windows.Forms.PictureBox();
-            this.route4 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.PanelRoute.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.PanelGebouw.SuspendLayout();
             this.panel3.SuspendLayout();
-            this.panel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.route1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.route2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.route3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.route4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.route3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.route2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.route1)).BeginInit();
+            this.panel5.SuspendLayout();
             this.SuspendLayout();
             // 
             // ButtonTerug
@@ -194,6 +194,58 @@
             this.panel3.TabIndex = 1;
             this.panel3.Resize += new System.EventHandler(this.panel3_Resize);
             // 
+            // route4
+            // 
+            this.route4.BackColor = System.Drawing.Color.Transparent;
+            this.route4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.route4.Image = global::FireBee.Properties.Resources.route_4;
+            this.route4.Location = new System.Drawing.Point(0, 0);
+            this.route4.Name = "route4";
+            this.route4.Size = new System.Drawing.Size(986, 640);
+            this.route4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.route4.TabIndex = 10;
+            this.route4.TabStop = false;
+            this.route4.Visible = false;
+            // 
+            // route3
+            // 
+            this.route3.BackColor = System.Drawing.Color.Transparent;
+            this.route3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.route3.Image = global::FireBee.Properties.Resources.route_3;
+            this.route3.Location = new System.Drawing.Point(0, 0);
+            this.route3.Name = "route3";
+            this.route3.Size = new System.Drawing.Size(986, 640);
+            this.route3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.route3.TabIndex = 9;
+            this.route3.TabStop = false;
+            this.route3.Visible = false;
+            // 
+            // route2
+            // 
+            this.route2.BackColor = System.Drawing.Color.Transparent;
+            this.route2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.route2.Image = global::FireBee.Properties.Resources.route_2;
+            this.route2.Location = new System.Drawing.Point(0, 0);
+            this.route2.Name = "route2";
+            this.route2.Size = new System.Drawing.Size(986, 640);
+            this.route2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.route2.TabIndex = 8;
+            this.route2.TabStop = false;
+            this.route2.Visible = false;
+            // 
+            // route1
+            // 
+            this.route1.BackColor = System.Drawing.Color.Transparent;
+            this.route1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.route1.Image = global::FireBee.Properties.Resources.route_1;
+            this.route1.Location = new System.Drawing.Point(0, 0);
+            this.route1.Name = "route1";
+            this.route1.Size = new System.Drawing.Size(986, 640);
+            this.route1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.route1.TabIndex = 7;
+            this.route1.TabStop = false;
+            this.route1.Visible = false;
+            // 
             // button7
             // 
             this.button7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
@@ -301,58 +353,6 @@
             this.timer1.Interval = 8000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // route1
-            // 
-            this.route1.BackColor = System.Drawing.Color.Transparent;
-            this.route1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.route1.Image = global::FireBee.Properties.Resources.route_1;
-            this.route1.Location = new System.Drawing.Point(0, 0);
-            this.route1.Name = "route1";
-            this.route1.Size = new System.Drawing.Size(986, 640);
-            this.route1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.route1.TabIndex = 7;
-            this.route1.TabStop = false;
-            this.route1.Visible = false;
-            // 
-            // route2
-            // 
-            this.route2.BackColor = System.Drawing.Color.Transparent;
-            this.route2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.route2.Image = global::FireBee.Properties.Resources.route_2;
-            this.route2.Location = new System.Drawing.Point(0, 0);
-            this.route2.Name = "route2";
-            this.route2.Size = new System.Drawing.Size(986, 640);
-            this.route2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.route2.TabIndex = 8;
-            this.route2.TabStop = false;
-            this.route2.Visible = false;
-            // 
-            // route3
-            // 
-            this.route3.BackColor = System.Drawing.Color.Transparent;
-            this.route3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.route3.Image = global::FireBee.Properties.Resources.route_3;
-            this.route3.Location = new System.Drawing.Point(0, 0);
-            this.route3.Name = "route3";
-            this.route3.Size = new System.Drawing.Size(986, 640);
-            this.route3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.route3.TabIndex = 9;
-            this.route3.TabStop = false;
-            this.route3.Visible = false;
-            // 
-            // route4
-            // 
-            this.route4.BackColor = System.Drawing.Color.Transparent;
-            this.route4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.route4.Image = global::FireBee.Properties.Resources.route_4;
-            this.route4.Location = new System.Drawing.Point(0, 0);
-            this.route4.Name = "route4";
-            this.route4.Size = new System.Drawing.Size(986, 640);
-            this.route4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.route4.TabIndex = 10;
-            this.route4.TabStop = false;
-            this.route4.Visible = false;
-            // 
             // Brand
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -366,6 +366,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Brand";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Brand_FormClosing);
             this.Load += new System.EventHandler(this.Brand_Load);
             this.Resize += new System.EventHandler(this.Brand_Resize);
             this.panel1.ResumeLayout(false);
@@ -374,12 +375,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.PanelGebouw.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.route4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.route3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.route2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.route1)).EndInit();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.route1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.route2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.route3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.route4)).EndInit();
             this.ResumeLayout(false);
 
         }

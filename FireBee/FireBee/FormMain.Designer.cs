@@ -28,21 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.SuspendLayout();
-            // 
-            // Form1
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.btnInloggen = new System.Windows.Forms.Button();
-            this.tbGebruikersnaam = new System.Windows.Forms.TextBox();
-            this.tbWachtwoord = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.btnBrand = new System.Windows.Forms.Button();
+            this.tbWachtwoord = new Demo.PlaceholderTextBox();
+            this.tbGebruikersnaam = new Demo.PlaceholderTextBox();
             this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
             this.panel1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnInloggen
@@ -50,26 +45,10 @@
             this.btnInloggen.Location = new System.Drawing.Point(176, 61);
             this.btnInloggen.Name = "btnInloggen";
             this.btnInloggen.Size = new System.Drawing.Size(115, 23);
-            this.btnInloggen.TabIndex = 3;
+            this.btnInloggen.TabIndex = 2;
             this.btnInloggen.Text = "Inloggen";
             this.btnInloggen.UseVisualStyleBackColor = true;
-            // 
-            // tbGebruikersnaam
-            // 
-            this.tbGebruikersnaam.Location = new System.Drawing.Point(0, 3);
-            this.tbGebruikersnaam.Name = "tbGebruikersnaam";
-            this.tbGebruikersnaam.Size = new System.Drawing.Size(291, 20);
-            this.tbGebruikersnaam.TabIndex = 1;
-            this.tbGebruikersnaam.Text = "Gebruikernaam";
-            // 
-            // tbWachtwoord
-            // 
-            this.tbWachtwoord.Location = new System.Drawing.Point(0, 29);
-            this.tbWachtwoord.Name = "tbWachtwoord";
-            this.tbWachtwoord.Size = new System.Drawing.Size(291, 20);
-            this.tbWachtwoord.TabIndex = 2;
-            this.tbWachtwoord.Text = "Wachtwoord";
-            this.tbWachtwoord.UseSystemPasswordChar = true;
+            this.btnInloggen.Click += new System.EventHandler(this.btnInloggen_Click);
             // 
             // groupBox1
             // 
@@ -81,6 +60,16 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Inloggen";
             // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.tbWachtwoord);
+            this.panel1.Controls.Add(this.tbGebruikersnaam);
+            this.panel1.Controls.Add(this.btnInloggen);
+            this.panel1.Location = new System.Drawing.Point(10, 25);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(291, 84);
+            this.panel1.TabIndex = 4;
+            // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.btnBrand);
@@ -90,16 +79,6 @@
             this.groupBox2.TabIndex = 5;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Brand";
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.tbGebruikersnaam);
-            this.panel1.Controls.Add(this.tbWachtwoord);
-            this.panel1.Controls.Add(this.btnInloggen);
-            this.panel1.Location = new System.Drawing.Point(10, 25);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(291, 84);
-            this.panel1.TabIndex = 4;
             // 
             // btnBrand
             // 
@@ -113,24 +92,44 @@
             this.btnBrand.TabIndex = 3;
             this.btnBrand.Text = "Brand";
             this.btnBrand.UseVisualStyleBackColor = true;
+            this.btnBrand.Click += new System.EventHandler(this.btnBrand_Click);
             // 
-            // inloggen
+            // tbWachtwoord
             // 
+            this.tbWachtwoord.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbWachtwoord.Location = new System.Drawing.Point(0, 29);
+            this.tbWachtwoord.Name = "tbWachtwoord";
+            this.tbWachtwoord.PlaceholderText = "Wachtwoord";
+            this.tbWachtwoord.Size = new System.Drawing.Size(291, 20);
+            this.tbWachtwoord.TabIndex = 1;
+            this.tbWachtwoord.UseSystemPasswordChar = true;
+            // 
+            // tbGebruikersnaam
+            // 
+            this.tbGebruikersnaam.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbGebruikersnaam.Location = new System.Drawing.Point(0, 3);
+            this.tbGebruikersnaam.Name = "tbGebruikersnaam";
+            this.tbGebruikersnaam.PlaceholderText = "Gebruikersnaam";
+            this.tbGebruikersnaam.Size = new System.Drawing.Size(291, 20);
+            this.tbGebruikersnaam.TabIndex = 0;
+            // 
+            // FormMain
+            // 
+            this.AcceptButton = this.btnInloggen;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(941, 501);
-            this.Name = "Form1";
+            this.ClientSize = new System.Drawing.Size(645, 153);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
-            this.Name = "inloggen";
+            this.Name = "FormMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Firebee - inloggen";
             this.groupBox1.ResumeLayout(false);
-            this.groupBox2.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -138,12 +137,12 @@
         #endregion
 
         private System.Windows.Forms.Button btnInloggen;
-        private System.Windows.Forms.TextBox tbGebruikersnaam;
-        private System.Windows.Forms.TextBox tbWachtwoord;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Button btnBrand;
         private System.Windows.Forms.Panel panel1;
+        private Demo.PlaceholderTextBox tbWachtwoord;
+        private Demo.PlaceholderTextBox tbGebruikersnaam;
     }
 }
 

@@ -9,6 +9,8 @@ using System.Windows.Forms;
 using FireBee.Extensions;
 using FireBee.Forms;
 using FireBee.Forms.Management;
+using FireBee.Domain;
+using FireBee.Brand;
 
 namespace FireBee
 {
@@ -16,7 +18,22 @@ namespace FireBee
     {
         public FormMain()
         {
-            InitializeComponent();            
+            InitializeComponent();
+
+            tbWachtwoord.Text = "1";
+            tbWachtwoord.Text = "";
+        }
+
+        private void btnBrand_Click(object sender, EventArgs e)
+        {
+            Tools.ShowForm(new Brand.Brand());
+            Tools.CloseForm(this);
+        }
+
+        private void btnInloggen_Click(object sender, EventArgs e)
+        {
+            Tools.ShowForm(new FormManagement());
+            Tools.CloseForm(this);
         }
     }
 }

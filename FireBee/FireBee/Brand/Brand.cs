@@ -35,8 +35,9 @@ namespace FireBee.Brand
                 subkey = subkey.CreateSubKey(keyName);
                 subkey.SetValue(Process.GetCurrentProcess().ProcessName + ".exe", 11001);
             }
-            catch (Exception ex)
+            catch (Exception)
             {
+
                 MessageBox.Show("Start de applicatie als administrator");
             }
         }
@@ -153,6 +154,11 @@ namespace FireBee.Brand
             route2.Visible = true;
             route3.Visible = true;
             route4.Visible = true;
+        }
+
+        private void Brand_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            FireBee.Domain.Tools.CloseForm(this);
         }
     }
 }

@@ -77,6 +77,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "FormManagement";
             this.Text = "Beheer";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormManagement_FormClosing);
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 

@@ -36,5 +36,10 @@ namespace FireBee.Forms
                     break;
             }
         }
+
+        private void FormManagement_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Domain.Tools.CloseForm(this);
+        }
     }
 }

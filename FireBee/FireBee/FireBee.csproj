@@ -71,7 +71,17 @@
     <Compile Include="Brand\Adres.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Brand\Adres.Designer.cs">
+      <DependentUpon>Adres.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Brand\Brand.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Brand\Brand.Designer.cs">
+      <DependentUpon>Brand.cs</DependentUpon>
+    </Compile>
     <Compile Include="Domain\Group.cs" />
+    <Compile Include="Domain\Tools.cs" />
     <Compile Include="Extensions\ControlExtensions.cs" />
     <Compile Include="Controls\ProfilePictureBox.cs">
       <SubType>Component</SubType>
@@ -79,6 +89,7 @@
     <Compile Include="Domain\Member.cs" />
     <Compile Include="Extensions\RectangleFExtensions.cs" />
     <Compile Include="FormMain.cs">
+      <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormMain.Designer.cs">
       <DependentUpon>FormMain.cs</DependentUpon>
@@ -116,9 +127,8 @@
       <DependentUpon>Adres.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Brand\Brand.resx">
-      <DependentUpon>Brand.cs</DependentUpon>    
+      <DependentUpon>Brand.cs</DependentUpon>
     </EmbeddedResource>
-
     <EmbeddedResource Include="FormMain.resx">
       <DependentUpon>FormMain.cs</DependentUpon>
     </EmbeddedResource>
@@ -133,7 +143,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Management\FormMembers.resx">
       <DependentUpon>FormMembers.cs</DependentUpon>
-
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -182,6 +191,7 @@
       <ProductName>Windows Installer 4.5</ProductName>
       <Install>true</Install>
     </BootstrapperPackage>
+    <None Include="Resources\fireball.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\firebee plattegrond.png" />
