@@ -1,17 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Windows.Forms;
 
-namespace FireBee.Brand
+namespace FireBee.Forms.Fire
 {
-    public partial class Bestemming : Form
+    public partial class FormDestination : Form
     {
-        public Bestemming()
+        public FormDestination()
         {
             InitializeComponent();
         }

@@ -1,6 +1,6 @@
-﻿namespace FireBee.Brand
+﻿namespace FireBee.Forms.Fire
 {
-    partial class Bestemming
+    partial class FormDestination
     {
         /// <summary>
         /// Required designer variable.
@@ -104,11 +104,12 @@
             this.placeholderTextBox1.Size = new System.Drawing.Size(261, 20);
             this.placeholderTextBox1.TabIndex = 0;
             // 
-            // Bestemming
+            // FormDestination
             // 
             this.AcceptButton = this.button2;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Window;
             this.CancelButton = this.button1;
             this.ClientSize = new System.Drawing.Size(359, 140);
             this.Controls.Add(this.button2);
@@ -121,7 +122,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "Bestemming";
+            this.Name = "FormDestination";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Adres";
             this.ResumeLayout(false);

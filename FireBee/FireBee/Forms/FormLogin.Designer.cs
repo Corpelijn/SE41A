@@ -1,4 +1,4 @@
-﻿namespace FireBee.Forms.Login
+﻿namespace FireBee.Forms
 {
     partial class FormLogin
     {
@@ -100,6 +100,7 @@
             this.btnBrand.TabIndex = 9;
             this.btnBrand.Text = "Brand";
             this.btnBrand.UseVisualStyleBackColor = true;
+            this.btnBrand.Click += new System.EventHandler(this.btnBrand_Click);
             // 
             // FormLogin
             // 

@@ -68,20 +68,41 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Forms\Brand\Adres.cs">
+    <Compile Include="Controls\Canvas.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Canvas.Designer.cs">
+      <DependentUpon>Canvas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\HeaderNavigation.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Extensions\RectangleExtensions.cs" />
+    <Compile Include="Forms\Fire\FormAddress.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Brand\Adres.Designer.cs">
-      <DependentUpon>Adres.cs</DependentUpon>
+    <Compile Include="Forms\Fire\FormAddress.Designer.cs">
+      <DependentUpon>FormAddress.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Brand\Brand.cs">
+    <Compile Include="Forms\Fire\FormBuilding.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Brand\Brand.Designer.cs">
-      <DependentUpon>Brand.cs</DependentUpon>
+    <Compile Include="Forms\Fire\FormBuilding.Designer.cs">
+      <DependentUpon>FormBuilding.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Fire\FormRoute.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Fire\FormRoute.Designer.cs">
+      <DependentUpon>FormRoute.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormFire.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormFire.Designer.cs">
+      <DependentUpon>FormFire.cs</DependentUpon>
     </Compile>
     <Compile Include="Domain\Group.cs" />
-    <Compile Include="Domain\Tools.cs" />
     <Compile Include="Extensions\ControlExtensions.cs" />
     <Compile Include="Controls\ProfilePictureBox.cs">
       <SubType>Component</SubType>
@@ -100,10 +121,10 @@
     <Compile Include="Forms\FormManagement.Designer.cs">
       <DependentUpon>FormManagement.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Login\FormLogin.cs">
+    <Compile Include="Forms\FormLogin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Login\FormLogin.Designer.cs">
+    <Compile Include="Forms\FormLogin.Designer.cs">
       <DependentUpon>FormLogin.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Management\FormGroups.cs">
@@ -129,11 +150,21 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Forms\Brand\Adres.resx">
-      <DependentUpon>Adres.cs</DependentUpon>
+    <Compile Include="Utils\TaskEx.cs" />
+    <EmbeddedResource Include="Controls\Canvas.resx">
+      <DependentUpon>Canvas.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Brand\Brand.resx">
-      <DependentUpon>Brand.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\Fire\FormAddress.resx">
+      <DependentUpon>FormAddress.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Fire\FormBuilding.resx">
+      <DependentUpon>FormBuilding.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Fire\FormRoute.resx">
+      <DependentUpon>FormRoute.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormFire.resx">
+      <DependentUpon>FormFire.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormMain.resx">
       <DependentUpon>FormMain.cs</DependentUpon>
@@ -141,7 +172,7 @@
     <EmbeddedResource Include="Forms\FormManagement.resx">
       <DependentUpon>FormManagement.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Login\FormLogin.resx">
+    <EmbeddedResource Include="Forms\FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Management\FormGroups.resx">
