@@ -118,7 +118,7 @@
     <Compile Include="Forms\Management\FormMembers.Designer.cs">
       <DependentUpon>FormMembers.cs</DependentUpon>
     </Compile>
-    <Compile Include="PlaceholderTextBox.cs">
+    <Compile Include="Controls\PlaceholderTextBox.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Program.cs" />
@@ -170,7 +170,6 @@
     <None Include="Resources\fireball2.png" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="icons\fireball.png" />
     <BootstrapperPackage Include=".NETFramework,Version=v4.0">
       <Visible>False</Visible>
       <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>

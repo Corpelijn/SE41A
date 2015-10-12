@@ -31,10 +31,10 @@
             this.btnInloggen = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.btnBrand = new System.Windows.Forms.Button();
             this.tbWachtwoord = new Demo.PlaceholderTextBox();
             this.tbGebruikersnaam = new Demo.PlaceholderTextBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.btnBrand = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -70,6 +70,25 @@
             this.panel1.Size = new System.Drawing.Size(291, 84);
             this.panel1.TabIndex = 4;
             // 
+            // tbWachtwoord
+            // 
+            this.tbWachtwoord.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbWachtwoord.Location = new System.Drawing.Point(0, 29);
+            this.tbWachtwoord.Name = "tbWachtwoord";
+            this.tbWachtwoord.PlaceholderText = "Wachtwoord";
+            this.tbWachtwoord.Size = new System.Drawing.Size(291, 20);
+            this.tbWachtwoord.TabIndex = 1;
+            this.tbWachtwoord.UseSystemPasswordChar = true;
+            // 
+            // tbGebruikersnaam
+            // 
+            this.tbGebruikersnaam.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbGebruikersnaam.Location = new System.Drawing.Point(0, 3);
+            this.tbGebruikersnaam.Name = "tbGebruikersnaam";
+            this.tbGebruikersnaam.PlaceholderText = "Gebruikersnaam";
+            this.tbGebruikersnaam.Size = new System.Drawing.Size(291, 20);
+            this.tbGebruikersnaam.TabIndex = 0;
+            // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.btnBrand);
@@ -94,30 +113,12 @@
             this.btnBrand.UseVisualStyleBackColor = true;
             this.btnBrand.Click += new System.EventHandler(this.btnBrand_Click);
             // 
-            // tbWachtwoord
-            // 
-            this.tbWachtwoord.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbWachtwoord.Location = new System.Drawing.Point(0, 29);
-            this.tbWachtwoord.Name = "tbWachtwoord";
-            this.tbWachtwoord.PlaceholderText = "Wachtwoord";
-            this.tbWachtwoord.Size = new System.Drawing.Size(291, 20);
-            this.tbWachtwoord.TabIndex = 1;
-            this.tbWachtwoord.UseSystemPasswordChar = true;
-            // 
-            // tbGebruikersnaam
-            // 
-            this.tbGebruikersnaam.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbGebruikersnaam.Location = new System.Drawing.Point(0, 3);
-            this.tbGebruikersnaam.Name = "tbGebruikersnaam";
-            this.tbGebruikersnaam.PlaceholderText = "Gebruikersnaam";
-            this.tbGebruikersnaam.Size = new System.Drawing.Size(291, 20);
-            this.tbGebruikersnaam.TabIndex = 0;
-            // 
             // FormMain
             // 
             this.AcceptButton = this.btnInloggen;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(645, 153);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
