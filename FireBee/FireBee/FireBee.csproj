@@ -68,16 +68,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Brand\Adres.cs">
+    <Compile Include="Forms\Brand\Adres.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Brand\Adres.Designer.cs">
+    <Compile Include="Forms\Brand\Adres.Designer.cs">
       <DependentUpon>Adres.cs</DependentUpon>
     </Compile>
-    <Compile Include="Brand\Brand.cs">
+    <Compile Include="Forms\Brand\Brand.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Brand\Brand.Designer.cs">
+    <Compile Include="Forms\Brand\Brand.Designer.cs">
       <DependentUpon>Brand.cs</DependentUpon>
     </Compile>
     <Compile Include="Domain\Group.cs" />
@@ -99,6 +99,12 @@
     </Compile>
     <Compile Include="Forms\FormManagement.Designer.cs">
       <DependentUpon>FormManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Login\FormLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Login\FormLogin.Designer.cs">
+      <DependentUpon>FormLogin.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Management\FormGroups.cs">
       <SubType>Form</SubType>
@@ -123,10 +129,10 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Brand\Adres.resx">
+    <EmbeddedResource Include="Forms\Brand\Adres.resx">
       <DependentUpon>Adres.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Brand\Brand.resx">
+    <EmbeddedResource Include="Forms\Brand\Brand.resx">
       <DependentUpon>Brand.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormMain.resx">
@@ -134,6 +140,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormManagement.resx">
       <DependentUpon>FormManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Login\FormLogin.resx">
+      <DependentUpon>FormLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Management\FormGroups.resx">
       <DependentUpon>FormGroups.cs</DependentUpon>

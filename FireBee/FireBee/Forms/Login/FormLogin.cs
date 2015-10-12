@@ -6,22 +6,21 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-using FireBee.Extensions;
-using FireBee.Forms;
-using FireBee.Forms.Management;
 using FireBee.Domain;
-using FireBee.Brand;
-using FireBee.Forms.Login;
+using FireBee.Extensions;
 
-namespace FireBee
+namespace FireBee.Forms.Login
 {
-    public partial class FormMain : Form
+    public partial class FormLogin : Form
     {
-        public FormMain()
+        public FormLogin()
         {
             InitializeComponent();
+        }
 
-            this.SetView(new FormLogin());
+        private void btnInloggen_Click(object sender, EventArgs e)
+        {
+            this.SetView(new FormManagement());
         }
     }
 }

@@ -28,122 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnInloggen = new System.Windows.Forms.Button();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.tbWachtwoord = new Demo.PlaceholderTextBox();
-            this.tbGebruikersnaam = new Demo.PlaceholderTextBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.btnBrand = new System.Windows.Forms.Button();
-            this.groupBox1.SuspendLayout();
-            this.panel1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // btnInloggen
-            // 
-            this.btnInloggen.Location = new System.Drawing.Point(176, 61);
-            this.btnInloggen.Name = "btnInloggen";
-            this.btnInloggen.Size = new System.Drawing.Size(115, 23);
-            this.btnInloggen.TabIndex = 2;
-            this.btnInloggen.Text = "Inloggen";
-            this.btnInloggen.UseVisualStyleBackColor = true;
-            this.btnInloggen.Click += new System.EventHandler(this.btnInloggen_Click);
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.panel1);
-            this.groupBox1.Location = new System.Drawing.Point(8, 9);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(311, 134);
-            this.groupBox1.TabIndex = 4;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Inloggen";
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.tbWachtwoord);
-            this.panel1.Controls.Add(this.tbGebruikersnaam);
-            this.panel1.Controls.Add(this.btnInloggen);
-            this.panel1.Location = new System.Drawing.Point(10, 25);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(291, 84);
-            this.panel1.TabIndex = 4;
-            // 
-            // tbWachtwoord
-            // 
-            this.tbWachtwoord.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbWachtwoord.Location = new System.Drawing.Point(0, 29);
-            this.tbWachtwoord.Name = "tbWachtwoord";
-            this.tbWachtwoord.PlaceholderText = "Wachtwoord";
-            this.tbWachtwoord.Size = new System.Drawing.Size(291, 20);
-            this.tbWachtwoord.TabIndex = 1;
-            this.tbWachtwoord.UseSystemPasswordChar = true;
-            // 
-            // tbGebruikersnaam
-            // 
-            this.tbGebruikersnaam.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbGebruikersnaam.Location = new System.Drawing.Point(0, 3);
-            this.tbGebruikersnaam.Name = "tbGebruikersnaam";
-            this.tbGebruikersnaam.PlaceholderText = "Gebruikersnaam";
-            this.tbGebruikersnaam.Size = new System.Drawing.Size(291, 20);
-            this.tbGebruikersnaam.TabIndex = 0;
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.btnBrand);
-            this.groupBox2.Location = new System.Drawing.Point(325, 9);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(311, 134);
-            this.groupBox2.TabIndex = 5;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Brand";
-            // 
-            // btnBrand
-            // 
-            this.btnBrand.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnBrand.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBrand.Image = global::FireBee.Properties.Resources.fireball;
-            this.btnBrand.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBrand.Location = new System.Drawing.Point(10, 25);
-            this.btnBrand.Name = "btnBrand";
-            this.btnBrand.Size = new System.Drawing.Size(295, 84);
-            this.btnBrand.TabIndex = 3;
-            this.btnBrand.Text = "Brand";
-            this.btnBrand.UseVisualStyleBackColor = true;
-            this.btnBrand.Click += new System.EventHandler(this.btnBrand_Click);
             // 
             // FormMain
             // 
-            this.AcceptButton = this.btnInloggen;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
-            this.ClientSize = new System.Drawing.Size(645, 153);
-            this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.groupBox1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.MaximizeBox = false;
+            this.ClientSize = new System.Drawing.Size(631, 234);
             this.Name = "FormMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Firebee - inloggen";
-            this.groupBox1.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
+            this.Text = "Firebee";
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Button btnInloggen;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Button btnBrand;
-        private System.Windows.Forms.Panel panel1;
-        private Demo.PlaceholderTextBox tbWachtwoord;
-        private Demo.PlaceholderTextBox tbGebruikersnaam;
     }
 }
 
