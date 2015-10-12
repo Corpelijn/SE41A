@@ -71,20 +71,41 @@
     <Compile Include="Brand\Adres.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Brand\Adres.Designer.cs">
-      <DependentUpon>Adres.cs</DependentUpon>
+    <Compile Include="Domain\Group.cs" />
+    <Compile Include="Extensions\ControlExtensions.cs" />
+    <Compile Include="Controls\ProfilePictureBox.cs">
+      <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Brand\Brand.cs">
+    <Compile Include="Domain\Member.cs" />
+    <Compile Include="Extensions\RectangleFExtensions.cs" />
+    <Compile Include="FormMain.cs">
+    </Compile>
+    <Compile Include="FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormManagement.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Brand\Brand.Designer.cs">
-      <DependentUpon>Brand.cs</DependentUpon>
+    <Compile Include="Forms\FormManagement.Designer.cs">
+      <DependentUpon>FormManagement.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="Forms\Management\FormGroups.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Forms\Management\FormGroups.Designer.cs">
+      <DependentUpon>FormGroups.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Management\FormMember.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Management\FormMember.Designer.cs">
+      <DependentUpon>FormMember.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Management\FormMembers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Management\FormMembers.Designer.cs">
+      <DependentUpon>FormMembers.cs</DependentUpon>
     </Compile>
     <Compile Include="PlaceholderTextBox.cs">
       <SubType>Component</SubType>
@@ -95,10 +116,24 @@
       <DependentUpon>Adres.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Brand\Brand.resx">
-      <DependentUpon>Brand.cs</DependentUpon>
+      <DependentUpon>Brand.cs</DependentUpon>    
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+
+    <EmbeddedResource Include="FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormManagement.resx">
+      <DependentUpon>FormManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Management\FormGroups.resx">
+      <DependentUpon>FormGroups.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Management\FormMember.resx">
+      <DependentUpon>FormMember.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Management\FormMembers.resx">
+      <DependentUpon>FormMembers.cs</DependentUpon>
+
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -123,6 +158,10 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\fireball2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="icons\fireball.png" />
     <BootstrapperPackage Include=".NETFramework,Version=v4.0">
       <Visible>False</Visible>
       <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>

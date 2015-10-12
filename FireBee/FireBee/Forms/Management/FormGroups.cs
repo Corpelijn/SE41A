@@ -7,13 +7,18 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace FireBee
+namespace FireBee.Forms.Management
 {
-    public partial class Form1 : Form
+    public partial class FormGroups : Form
     {
-        public Form1()
+        public FormGroups()
         {
             InitializeComponent();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
