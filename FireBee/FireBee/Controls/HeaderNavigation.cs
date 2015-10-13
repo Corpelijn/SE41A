@@ -6,7 +6,7 @@ using System.Windows.Forms;
 
 namespace FireBee.Controls
 {
-    internal sealed class HeaderNavigation : Panel
+    public sealed class HeaderNavigation : Panel
     {
         public HeaderNavigation()
         {

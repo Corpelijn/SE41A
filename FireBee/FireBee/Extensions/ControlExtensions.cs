@@ -3,6 +3,8 @@ using System.Drawing;
 using System.Runtime.InteropServices;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using FireBee.Domain;
+using FireBee.Forms;
 using FireBee.Utils;
 
 namespace FireBee.Extensions
@@ -42,6 +44,10 @@ namespace FireBee.Extensions
             form.Dock = DockStyle.Fill;
             form.FormBorderStyle = FormBorderStyle.None;
             form.Show();
+
+            FormMain.Header.Index(0).Visible = !(form is FormLogin);
+            if (Account.IsLoggedIn && form is FormLogin) Account.IsLoggedIn = false; 
+            FormMain.Header.Index(3).Visible = Account.IsLoggedIn;
         }
 
         public static void InvokeSafe<T>(this T control, Action<T> action) where T : Control

@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using FireBee.Controls;
 using FireBee.Extensions;
 using FireBee.Forms;
 using FireBee.Forms.Management;
@@ -16,17 +17,19 @@ namespace FireBee
 {
     public partial class FormMain : Form
     {
+        public static HeaderNavigation Header { get; set; }
+
         public FormMain()
         {
             InitializeComponent();
 
-            headerNavigation.AddRange("Terug", "Route", "Gebouw");
+            Header = headerNavigation;
+            headerNavigation.AddRange("Terug", "Route", "Gebouw", "Beheer");
             headerNavigation.Index(0).Click += ButtonBack_OnClick;
             headerNavigation.Index(1).Click += ButtonRoute_OnClick;
             headerNavigation.Index(2).Click += ButtonBuilding_OnClick;
+            headerNavigation.Index(3).Click += ButtonManagement_OnClick;
             panelView.SetView(new FormLogin());
-
-            headerNavigation.Index(0).Visible = false;
         }
 
         private void ButtonBack_OnClick(object sender, EventArgs eventArgs)
@@ -42,12 +45,13 @@ namespace FireBee
         private void ButtonBuilding_OnClick(object sender, EventArgs eventArgs)
         {
             panelView.SetView(new FormBuilding());
+
             ((Button)sender).BackColor = SystemColors.Control;
         }
 
-        private void ButtonBuilding_Click(object sender, EventArgs e)
+        private void ButtonManagement_OnClick(object sender, EventArgs eventArgs)
         {
-            panelView.SetView(new FormBuilding());
+            panelView.SetView(new FormManagement());
         }
     }
 }
