@@ -33,8 +33,9 @@
             this.weBrowser = new System.Windows.Forms.WebBrowser();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.PanelRoute = new System.Windows.Forms.Panel();
-            this.buttonSetRoute = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.buttonSetRoute = new System.Windows.Forms.Button();
+            this.buttonShowBuilding = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.PanelRoute.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -77,6 +78,17 @@
             this.PanelRoute.Size = new System.Drawing.Size(1056, 502);
             this.PanelRoute.TabIndex = 5;
             // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.Gainsboro;
+            this.panel2.Controls.Add(this.buttonShowBuilding);
+            this.panel2.Controls.Add(this.buttonSetRoute);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel2.Location = new System.Drawing.Point(909, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(147, 502);
+            this.panel2.TabIndex = 2;
+            // 
             // buttonSetRoute
             // 
             this.buttonSetRoute.Location = new System.Drawing.Point(18, 15);
@@ -87,15 +99,15 @@
             this.buttonSetRoute.UseVisualStyleBackColor = true;
             this.buttonSetRoute.Click += new System.EventHandler(this.buttonSetRoute_Click);
             // 
-            // panel2
+            // buttonShowBuilding
             // 
-            this.panel2.BackColor = System.Drawing.Color.Gainsboro;
-            this.panel2.Controls.Add(this.buttonSetRoute);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel2.Location = new System.Drawing.Point(909, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(147, 502);
-            this.panel2.TabIndex = 2;
+            this.buttonShowBuilding.Location = new System.Drawing.Point(18, 51);
+            this.buttonShowBuilding.Name = "buttonShowBuilding";
+            this.buttonShowBuilding.Size = new System.Drawing.Size(107, 30);
+            this.buttonShowBuilding.TabIndex = 1;
+            this.buttonShowBuilding.Text = "Toon gebouw";
+            this.buttonShowBuilding.UseVisualStyleBackColor = true;
+            this.buttonShowBuilding.Click += new System.EventHandler(this.buttonShowBuilding_Click);
             // 
             // FormRoute
             // 
@@ -120,5 +132,6 @@
         private System.Windows.Forms.Panel PanelRoute;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button buttonSetRoute;
+        private System.Windows.Forms.Button buttonShowBuilding;
     }
 }

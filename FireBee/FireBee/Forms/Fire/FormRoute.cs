@@ -2,11 +2,13 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using FireBee.Utils;
+using Microsoft.Win32;
 
 namespace FireBee.Forms.Fire
 {
@@ -15,6 +17,20 @@ namespace FireBee.Forms.Fire
         public FormRoute()
         {
             InitializeComponent();
+
+            try
+            {
+                RegistryKey key = Registry.LocalMachine;
+                string parentKeyLocation = @"SOFTWARE\Microsoft\Internet Explorer\MAIN\FeatureControl";
+                string keyName = "FEATURE_BROWSER_EMULATION";
+                RegistryKey subkey = key.CreateSubKey(parentKeyLocation);
+                subkey = subkey.CreateSubKey(keyName);
+                subkey.SetValue(Process.GetCurrentProcess().ProcessName + ".exe", 11001);
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Start de applicatie als administrator");
+            }
         }
 
         private void buttonSetRoute_Click(object sender, EventArgs e)
@@ -69,6 +85,11 @@ namespace FireBee.Forms.Fire
         private void weBrowser_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)
         {
             TaskEx.Delay(5000).ContinueWith(t => timer1.Start());
+        }
+
+        private void buttonShowBuilding_Click(object sender, EventArgs e)
+        {
+            pictureBox1.Visible = !pictureBox1.Visible;
         }
     }
 }
