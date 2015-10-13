@@ -37,5 +37,10 @@ namespace FireBee.Forms.Management
                 SubItems = { string.Format("{0} {1}", m.FirstName, m.LastName), m.Group != null ? m.Group.Name : null }
             }).ToArray());
         }
+
+        private void buttonEdit_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

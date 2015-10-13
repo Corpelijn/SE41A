@@ -28,11 +28,11 @@ namespace FireBee.Forms
             {
                 case 0:
                     if (FormMembers == null) FormMembers = new FormMembers();
-                    panelView.SetView(FormMembers);
+                    panelView.SetView(FormMembers, false);
                     break;
                 default:
                     if (FormGroups == null) FormGroups = new FormGroups();
-                    panelView.SetView(FormGroups);
+                    panelView.SetView(FormGroups, false);
                     break;
             }
         }

@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.verwijderenButton = new System.Windows.Forms.Button();
-            this.bewerkenButton = new System.Windows.Forms.Button();
+            this.buttonDelete = new System.Windows.Forms.Button();
+            this.buttonEdit = new System.Windows.Forms.Button();
             this.buttonAdd = new System.Windows.Forms.Button();
             this.listView = new System.Windows.Forms.ListView();
             this.checkerColumnHeader = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -37,26 +37,30 @@
             this.groepColumnHeader = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.SuspendLayout();
             // 
-            // verwijderenButton
+            // buttonDelete
             // 
-            this.verwijderenButton.Location = new System.Drawing.Point(642, 92);
-            this.verwijderenButton.Name = "verwijderenButton";
-            this.verwijderenButton.Size = new System.Drawing.Size(80, 40);
-            this.verwijderenButton.TabIndex = 12;
-            this.verwijderenButton.Text = "Verwijderen";
-            this.verwijderenButton.UseVisualStyleBackColor = true;
+            this.buttonDelete.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonDelete.Location = new System.Drawing.Point(642, 92);
+            this.buttonDelete.Name = "buttonDelete";
+            this.buttonDelete.Size = new System.Drawing.Size(80, 40);
+            this.buttonDelete.TabIndex = 12;
+            this.buttonDelete.Text = "Verwijderen";
+            this.buttonDelete.UseVisualStyleBackColor = true;
             // 
-            // bewerkenButton
+            // buttonEdit
             // 
-            this.bewerkenButton.Location = new System.Drawing.Point(642, 46);
-            this.bewerkenButton.Name = "bewerkenButton";
-            this.bewerkenButton.Size = new System.Drawing.Size(80, 40);
-            this.bewerkenButton.TabIndex = 11;
-            this.bewerkenButton.Text = "Bewerken";
-            this.bewerkenButton.UseVisualStyleBackColor = true;
+            this.buttonEdit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonEdit.Location = new System.Drawing.Point(642, 46);
+            this.buttonEdit.Name = "buttonEdit";
+            this.buttonEdit.Size = new System.Drawing.Size(80, 40);
+            this.buttonEdit.TabIndex = 11;
+            this.buttonEdit.Text = "Bewerken";
+            this.buttonEdit.UseVisualStyleBackColor = true;
+            this.buttonEdit.Click += new System.EventHandler(this.buttonEdit_Click);
             // 
             // buttonAdd
             // 
+            this.buttonAdd.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonAdd.Location = new System.Drawing.Point(642, 0);
             this.buttonAdd.Name = "buttonAdd";
             this.buttonAdd.Size = new System.Drawing.Size(80, 40);
@@ -67,12 +71,14 @@
             // 
             // listView
             // 
+            this.listView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.listView.CheckBoxes = true;
             this.listView.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.checkerColumnHeader,
             this.naamColumnHeader,
             this.groepColumnHeader});
-            this.listView.Dock = System.Windows.Forms.DockStyle.Left;
             this.listView.Location = new System.Drawing.Point(0, 0);
             this.listView.Name = "listView";
             this.listView.Size = new System.Drawing.Size(636, 404);
@@ -100,20 +106,20 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(728, 404);
-            this.Controls.Add(this.verwijderenButton);
-            this.Controls.Add(this.bewerkenButton);
+            this.Controls.Add(this.buttonDelete);
+            this.Controls.Add(this.buttonEdit);
             this.Controls.Add(this.buttonAdd);
             this.Controls.Add(this.listView);
             this.Name = "FormMembers";
-            this.Text = "Beheer - Groepen";
+            this.Text = "Leden";
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button verwijderenButton;
-        private System.Windows.Forms.Button bewerkenButton;
+        private System.Windows.Forms.Button buttonDelete;
+        private System.Windows.Forms.Button buttonEdit;
         private System.Windows.Forms.Button buttonAdd;
         private System.Windows.Forms.ListView listView;
         private System.Windows.Forms.ColumnHeader checkerColumnHeader;

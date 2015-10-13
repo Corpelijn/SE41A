@@ -32,9 +32,9 @@
             this.buttonAccept = new System.Windows.Forms.Button();
             this.voornaamLabel = new System.Windows.Forms.Label();
             this.achternaamLabel = new System.Windows.Forms.Label();
-            this.profileBox = new FireBee.Controls.ProfilePictureBox();
-            this.textBoxFirstName = new Demo.PlaceholderTextBox();
             this.textBoxLastName = new Demo.PlaceholderTextBox();
+            this.textBoxFirstName = new Demo.PlaceholderTextBox();
+            this.profileBox = new FireBee.Controls.ProfilePictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.profileBox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -80,6 +80,24 @@
             this.achternaamLabel.TabIndex = 5;
             this.achternaamLabel.Text = "Achternaam:";
             // 
+            // textBoxLastName
+            // 
+            this.textBoxLastName.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxLastName.Location = new System.Drawing.Point(204, 39);
+            this.textBoxLastName.Name = "textBoxLastName";
+            this.textBoxLastName.PlaceholderText = "Achternaam";
+            this.textBoxLastName.Size = new System.Drawing.Size(241, 20);
+            this.textBoxLastName.TabIndex = 1;
+            // 
+            // textBoxFirstName
+            // 
+            this.textBoxFirstName.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxFirstName.Location = new System.Drawing.Point(204, 12);
+            this.textBoxFirstName.Name = "textBoxFirstName";
+            this.textBoxFirstName.PlaceholderText = "Voornaam";
+            this.textBoxFirstName.Size = new System.Drawing.Size(241, 20);
+            this.textBoxFirstName.TabIndex = 0;
+            // 
             // profileBox
             // 
             this.profileBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -95,24 +113,6 @@
             this.profileBox.TabIndex = 7;
             this.profileBox.TabStop = false;
             // 
-            // textBoxFirstName
-            // 
-            this.textBoxFirstName.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxFirstName.Location = new System.Drawing.Point(204, 12);
-            this.textBoxFirstName.Name = "textBoxFirstName";
-            this.textBoxFirstName.PlaceholderText = "Voornaam";
-            this.textBoxFirstName.Size = new System.Drawing.Size(241, 20);
-            this.textBoxFirstName.TabIndex = 0;
-            // 
-            // textBoxLastName
-            // 
-            this.textBoxLastName.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxLastName.Location = new System.Drawing.Point(204, 39);
-            this.textBoxLastName.Name = "textBoxLastName";
-            this.textBoxLastName.PlaceholderText = "Achternaam";
-            this.textBoxLastName.Size = new System.Drawing.Size(241, 20);
-            this.textBoxLastName.TabIndex = 1;
-            // 
             // FormMember
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -127,7 +127,8 @@
             this.Controls.Add(this.buttonAccept);
             this.Controls.Add(this.buttonCancel);
             this.Name = "FormMember";
-            this.Text = "Member formulier";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Lid formulier";
             ((System.ComponentModel.ISupportInitialize)(this.profileBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

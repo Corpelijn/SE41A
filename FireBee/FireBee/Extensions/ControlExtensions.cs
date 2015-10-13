@@ -16,7 +16,7 @@ namespace FireBee.Extensions
 
         private const int WM_SETREDRAW = 11;
 
-        public static void SetView<TBase, TView>(this TBase control, TView form) where TBase : Control where TView : Form
+        public static void SetView<TBase, TView>(this TBase control, TView form, bool resize = true) where TBase : Control where TView : Form
         {
             if (control == null) throw new ArgumentException("Parameter control must not be null.");
             if (form == null) throw new ArgumentException("Parameter form must not be null.");
@@ -33,7 +33,7 @@ namespace FireBee.Extensions
             // Set in form.
             form.TopLevel = false;
             form.Parent = control;
-            if (parentForm != null)
+            if (resize && parentForm != null)
             {
                 if (parentForm.WindowState != FormWindowState.Maximized)
                     parentControl.ClientSize = form.Size + new Size(0, 44);
