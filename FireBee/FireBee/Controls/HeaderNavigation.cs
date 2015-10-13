@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Drawing;
+using System.Linq;
 using System.Windows.Forms;
-using FireBee.Extensions;
 
 namespace FireBee.Controls
 {
@@ -23,7 +23,7 @@ namespace FireBee.Controls
 
         public void Add(string text)
         {
-            var control = new HeaderButton();
+            var control = new HeaderButton(this);
             control.Text = text;
             items.Add(control);
             Controls.Add(control);
@@ -51,12 +51,14 @@ namespace FireBee.Controls
 
         protected override void OnResize(EventArgs eventargs)
         {
-            int offsetX = 0;
-            for (int i = 0; i < items.Count; i++)
+            var offsetX = 0;
+            for (var i = 0; i < items.Count; i++)
             {
                 var item = items[i];
+                if (!item.Visible) continue;
+
                 item.Location = new Point(offsetX, 0);
-                item.Size = new Size(Width / items.Count, Height);
+                item.Size = new Size(Width / items.Count(a => a.Visible), Height);
 
                 offsetX += item.Width;
             }
@@ -66,9 +68,25 @@ namespace FireBee.Controls
 
         public class HeaderButton : Button
         {
-            public HeaderButton()
+            public HeaderButton(HeaderNavigation owner)
             {
+                if (owner == null) throw new ArgumentException("Parameter owner must not be null.", "owner");
                 BackColor = SystemColors.Control;
+                Owner = owner;
+            }
+
+            public HeaderNavigation Owner { get; set; }
+
+            public override sealed Color BackColor
+            {
+                get { return base.BackColor; }
+                set { base.BackColor = value; }
+            }
+
+            protected override void OnVisibleChanged(EventArgs e)
+            {
+                Owner.OnResize(e);
+                base.OnVisibleChanged(e);
             }
         }
     }

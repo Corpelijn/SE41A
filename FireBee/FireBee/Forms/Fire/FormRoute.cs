@@ -55,7 +55,7 @@ namespace FireBee.Forms.Fire
             {
                 if (Parent != null && Parent.Parent != null)
                 {
-                    Button building = ((FormFire)Parent.Parent).headerNavigation.Index(2);
+                    Button building = ((FormMain)Parent.Parent).headerNavigation.Index(2);
                     building.BackColor = building.BackColor == Color.Tomato ? SystemColors.Control : Color.Tomato;
                 }
                 else
