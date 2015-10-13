@@ -35,6 +35,8 @@
             this.textBoxLastName = new Demo.PlaceholderTextBox();
             this.textBoxFirstName = new Demo.PlaceholderTextBox();
             this.profileBox = new FireBee.Controls.ProfilePictureBox();
+            this.listViewGroups = new System.Windows.Forms.ListView();
+            this.columnHeaderName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             ((System.ComponentModel.ISupportInitialize)(this.profileBox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -42,7 +44,7 @@
             // 
             this.buttonCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.buttonCancel.Location = new System.Drawing.Point(370, 65);
+            this.buttonCancel.Location = new System.Drawing.Point(370, 191);
             this.buttonCancel.Name = "buttonCancel";
             this.buttonCancel.Size = new System.Drawing.Size(75, 23);
             this.buttonCancel.TabIndex = 3;
@@ -53,7 +55,7 @@
             // 
             this.buttonAccept.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonAccept.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.buttonAccept.Location = new System.Drawing.Point(289, 65);
+            this.buttonAccept.Location = new System.Drawing.Point(289, 191);
             this.buttonAccept.Name = "buttonAccept";
             this.buttonAccept.Size = new System.Drawing.Size(75, 23);
             this.buttonAccept.TabIndex = 2;
@@ -82,6 +84,8 @@
             // 
             // textBoxLastName
             // 
+            this.textBoxLastName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.textBoxLastName.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxLastName.Location = new System.Drawing.Point(204, 39);
             this.textBoxLastName.Name = "textBoxLastName";
@@ -91,6 +95,8 @@
             // 
             // textBoxFirstName
             // 
+            this.textBoxFirstName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.textBoxFirstName.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxFirstName.Location = new System.Drawing.Point(204, 12);
             this.textBoxFirstName.Name = "textBoxFirstName";
@@ -108,17 +114,38 @@
             this.profileBox.Location = new System.Drawing.Point(12, 12);
             this.profileBox.Name = "profileBox";
             this.profileBox.PlusButtonDisableDefaultAction = false;
-            this.profileBox.Size = new System.Drawing.Size(106, 111);
+            this.profileBox.Size = new System.Drawing.Size(106, 202);
             this.profileBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.profileBox.TabIndex = 7;
             this.profileBox.TabStop = false;
+            // 
+            // listViewGroups
+            // 
+            this.listViewGroups.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.listViewGroups.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeaderName});
+            this.listViewGroups.FullRowSelect = true;
+            this.listViewGroups.Location = new System.Drawing.Point(204, 65);
+            this.listViewGroups.MultiSelect = false;
+            this.listViewGroups.Name = "listViewGroups";
+            this.listViewGroups.Size = new System.Drawing.Size(241, 120);
+            this.listViewGroups.TabIndex = 8;
+            this.listViewGroups.UseCompatibleStateImageBehavior = false;
+            this.listViewGroups.View = System.Windows.Forms.View.Details;
+            // 
+            // columnHeaderName
+            // 
+            this.columnHeaderName.Text = "Groep";
+            this.columnHeaderName.Width = 236;
             // 
             // FormMember
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
-            this.ClientSize = new System.Drawing.Size(457, 135);
+            this.ClientSize = new System.Drawing.Size(457, 226);
+            this.Controls.Add(this.listViewGroups);
             this.Controls.Add(this.textBoxLastName);
             this.Controls.Add(this.textBoxFirstName);
             this.Controls.Add(this.profileBox);
@@ -143,5 +170,7 @@
         private Controls.ProfilePictureBox profileBox;
         private Demo.PlaceholderTextBox textBoxFirstName;
         private Demo.PlaceholderTextBox textBoxLastName;
+        private System.Windows.Forms.ListView listViewGroups;
+        private System.Windows.Forms.ColumnHeader columnHeaderName;
     }
 }

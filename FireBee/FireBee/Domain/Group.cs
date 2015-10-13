@@ -19,5 +19,10 @@ namespace FireBee.Domain
             Name = name;
             Members = new List<Member>();
         }
+
+        public override string ToString()
+        {
+            return string.Format("Groep: {0}", Name);
+        }
     }
 }

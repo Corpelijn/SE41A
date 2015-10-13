@@ -19,6 +19,7 @@ namespace FireBee.Forms
         public FormManagement()
         {
             InitializeComponent();
+
             comboBoxSelection.SelectedIndex = 0;
         }
 
@@ -27,12 +28,20 @@ namespace FireBee.Forms
             switch (comboBoxSelection.SelectedIndex)
             {
                 case 0:
-                    if (FormMembers == null) FormMembers = new FormMembers();
+                    if (FormMembers == null) FormMembers = new FormMembers(this);
                     panelView.SetView(FormMembers, false);
+                    FormMembers.RefreshList();
+                    break;
+                case 1:
+                    if (FormGroups == null) FormGroups = new FormGroups(this);
+                    panelView.SetView(FormGroups, false);
+                    FormMembers.RefreshList();
                     break;
                 default:
-                    if (FormGroups == null) FormGroups = new FormGroups();
-                    panelView.SetView(FormGroups, false);
+                    // Open members in group.
+                    if (FormMembers == null) FormMembers = new FormMembers(this);
+                    panelView.SetView(FormMembers, false);
+                    FormMembers.SetGroup(comboBoxSelection.SelectedText);
                     break;
             }
         }

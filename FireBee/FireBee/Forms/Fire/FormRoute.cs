@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using FireBee.Utils;
 
 namespace FireBee.Forms.Fire
 {
@@ -67,7 +68,7 @@ namespace FireBee.Forms.Fire
 
         private void weBrowser_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)
         {
-            timer1.Start();
+            TaskEx.Delay(5000).ContinueWith(t => timer1.Start());
         }
     }
 }

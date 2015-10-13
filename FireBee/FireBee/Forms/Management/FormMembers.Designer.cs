@@ -46,6 +46,7 @@
             this.buttonDelete.TabIndex = 12;
             this.buttonDelete.Text = "Verwijderen";
             this.buttonDelete.UseVisualStyleBackColor = true;
+            this.buttonDelete.Click += new System.EventHandler(this.buttonDelete_Click);
             // 
             // buttonEdit
             // 

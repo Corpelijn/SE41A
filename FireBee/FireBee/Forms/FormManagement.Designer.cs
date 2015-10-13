@@ -49,10 +49,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.comboBoxSelection.Items.AddRange(new object[] {
             "Alle Leden",
-            "Alle Groepen",
-            "Groep 1",
-            "Groep 2",
-            "Groep 3"});
+            "Alle Groepen"});
             this.comboBoxSelection.Location = new System.Drawing.Point(12, 12);
             this.comboBoxSelection.Name = "comboBoxSelection";
             this.comboBoxSelection.Size = new System.Drawing.Size(551, 21);
@@ -85,7 +82,7 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.ComboBox comboBoxSelection;
         private System.Windows.Forms.Panel panelView;
+        internal System.Windows.Forms.ComboBox comboBoxSelection;
     }
 }
